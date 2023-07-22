@@ -1,0 +1,44 @@
+header{
+    .box{
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    max-width: 1250px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    .logo {
+        width: 100px;
+        height: 60px;
+    }
+    nav {
+        max-width: 640px;
+        width: 100%;
+        ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: var(--secondary-text, #525560);
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        .curent {
+            color:  var(--black, #0B0706);
+        }
+        .donate{
+            padding: 12px 32px;
+            border-radius: 3px;
+            background: var(--primary-text, #1D2130);
+            color: #FFF;
+        }
+        .donate:hover{
+            background: var(--green-primary, #70C174);
+        }
+        }
+    }
+    }
+}
