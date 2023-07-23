@@ -1,0 +1,32 @@
+.container{
+    background: var(--black, #0B0706);
+    max-width: 1920px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        width: 100px;
+        height: 60px;
+        }
+        h3 {
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; /* 25.6px */
+        }
+        h6{
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 22.4px */
+            opacity: 0.7799999713897705;
+        }
+    
+}
