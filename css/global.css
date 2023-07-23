@@ -210,7 +210,9 @@ header nav ul .donate:hover {
 }
 
 .s1 .container {
-  background: url(<../../../../img/BG\ Image.jpg), lightgray 50%/cover/no-repeat;
+  background-image: url(../../img/BG\ Image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

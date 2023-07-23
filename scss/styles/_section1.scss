@@ -1,6 +1,8 @@
 .s1{
     .container{
-    background: url(<../../../../img/BG\ Image.jpg), lightgray 50% / cover / no-repeat;
+    background-image:url(../../img/BG\ Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
