@@ -143,29 +143,43 @@ a {
 }
 
 header .box {
-  margin: 0 auto;
+  max-width: 1920px;
+  width: 90%;
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1250px;
-  width: 100%;
-  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-header .box .logo {
+@media (max-width: 1440px) {
+  header .box {
+    width: 90%;
+  }
+}
+@media (max-width: 420px) {
+  header .box {
+    width: 95%;
+  }
+}
+@media (max-width: 550px) {
+  header .box .inv {
+    display: none;
+  }
+}
+header .logo {
   width: 100px;
   height: 60px;
 }
-header .box nav {
+header nav {
   max-width: 640px;
   width: 100%;
 }
-header .box nav ul {
+header nav ul {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,7 +188,7 @@ header .box nav ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header .box nav ul a {
+header nav ul a {
   color: var(--secondary-text, #525560);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -182,15 +196,41 @@ header .box nav ul a {
   font-weight: 500;
   line-height: normal;
 }
-header .box nav ul .curent {
+header nav ul .curent {
   color: var(--black, #0B0706);
 }
-header .box nav ul .donate {
+header nav ul .donate {
   padding: 12px 32px;
   border-radius: 3px;
   background: var(--primary-text, #1D2130);
   color: #FFF;
 }
-header .box nav ul .donate:hover {
+header nav ul .donate:hover {
   background: var(--green-primary, #70C174);
+}
+
+.s1 .container {
+  background: url(<../../../../img/BG\ Image.jpg), lightgray 50%/cover/no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.s1 .container .heading1 {
+  position: absolute;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 76.8px */
+  max-width: 640px;
 }/*# sourceMappingURL=global.css.map */

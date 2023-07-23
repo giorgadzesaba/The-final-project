@@ -1,12 +1,22 @@
 header{
     .box{
-    margin: 0 auto;
+    max-width: 1920px;
+    width: 90%;
+    margin: 0px auto;
     display:flex;
     justify-content:space-between;
-    max-width: 1250px;
-    width: 100%;
-    height: 100%;
     align-items: center;
+    @media (max-width:1440px) {
+            width: 90%;
+    }
+    @media (max-width:420px) {
+        width: 95%;
+    }
+    @media (max-width:550px) {
+        .inv {display: none;}
+        
+        }
+    }
     .logo {
         width: 100px;
         height: 60px;
@@ -38,7 +48,7 @@ header{
         .donate:hover{
             background: var(--green-primary, #70C174);
         }
+        
         }
-    }
     }
 }
