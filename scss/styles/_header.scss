@@ -1,7 +1,7 @@
 header{
-    .box{
+    .box{padding: 0% 10%;
     max-width: 1920px;
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
     display:flex;
     justify-content:space-between;
@@ -12,22 +12,24 @@ header{
     @media (max-width:420px) {
         width: 95%;
     }
-    @media (max-width:550px) {
+    @media (max-width:800px) {
         .inv {display: none;}
         
         }
-    }
+    
     .logo {
         width: 100px;
         height: 60px;
     }
     nav {
+        display: flex;
+        justify-content: end;
         max-width: 640px;
         width: 100%;
         ul{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         a {
             color: var(--secondary-text, #525560);
             font-family: 'Roboto', sans-serif;
@@ -49,6 +51,7 @@ header{
             background: var(--green-primary, #70C174);
         }
         
+        }
         }
     }
 }

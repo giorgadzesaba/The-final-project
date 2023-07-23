@@ -143,8 +143,9 @@ a {
 }
 
 header .box {
+  padding: 0% 10%;
   max-width: 1920px;
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,29 +167,34 @@ header .box {
     width: 95%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   header .box .inv {
     display: none;
   }
 }
-header .logo {
+header .box .logo {
   width: 100px;
   height: 60px;
 }
-header nav {
+header .box nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   max-width: 640px;
   width: 100%;
 }
-header nav ul {
+header .box nav ul {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-header nav ul a {
+header .box nav ul a {
   color: var(--secondary-text, #525560);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -196,45 +202,71 @@ header nav ul a {
   font-weight: 500;
   line-height: normal;
 }
-header nav ul .curent {
+header .box nav ul .curent {
   color: var(--black, #0B0706);
 }
-header nav ul .donate {
+header .box nav ul .donate {
   padding: 12px 32px;
   border-radius: 3px;
   background: var(--primary-text, #1D2130);
   color: #FFF;
 }
-header nav ul .donate:hover {
+header .box nav ul .donate:hover {
   background: var(--green-primary, #70C174);
 }
 
+.s1 .line {
+  max-width: 1920px;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 200px;
+  height: 100%;
+}
+.s1 .line h5 {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.s1 .line #line1 {
+  max-width: 1800px;
+  width: 100%;
+  border-bottom: solid 10px white;
+}
 .s1 .container {
-  background-image: url(../../img/BG\ Image.jpg);
+  background-image: url(../../img/peaceful-green-forest-l.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 .s1 .container .heading1 {
-  position: absolute;
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 76.8px */
-  max-width: 640px;
+}
+@media (max-width: 1300px) {
+  .s1 .container .heading1 {
+    width: 90%;
+  }
 }
 
 .container {
