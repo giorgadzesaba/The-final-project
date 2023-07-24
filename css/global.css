@@ -328,9 +328,6 @@ header .box nav ul .donate:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between;
   }
 }
 .container .div2 h3 {
@@ -418,4 +415,15 @@ header .box nav ul .donate:hover {
   gap: 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+@media (min-width: 1921px) {
+  html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }/*# sourceMappingURL=global.css.map */
