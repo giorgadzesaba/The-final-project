@@ -1,4 +1,5 @@
 .container{
+    padding: 0% 10%;
     background: var(--black, #0B0706);
     max-width: 1920px;
     width: 100%;
@@ -7,19 +8,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo {
+    @media (max-width:1200px) {
+        padding: 5%;
+    }
+    @media (max-width:900px) {
+        padding: 2.5%;
+    }
+    @media (max-width:860px) {
+        flex-direction: column;
+    }
+
+
+    .div1 img {
         width: 100px;
         height: 60px;
         }
-        h3 {
+        .div2{
+            padding: 0 10%;
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width:400px) {
+                flex-direction: column;
+                align-items: space-between;
+            }
+        
+            h3 {
             color: #FFF;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
             line-height: 160%; /* 25.6px */
-        }
-        h6{
+            }
+            h6{
             color: #FFF;
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
@@ -27,6 +51,55 @@
             font-weight: 400;
             line-height: 160%; /* 22.4px */
             opacity: 0.7799999713897705;
+            }
+    }
+    .div3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            max-width: 600px;
+            width: 100%;
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 76.8px */
         }
-    
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .in1{
+                color: rgba(235, 240, 249, 0.30);
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                background: var(--black, #0B0706);
+                height: 32px;
+                flex-shrink: 0;
+                opacity: 0.800000011920929;
+            }
+            .in2{color: var(--primary-text, #1D2130);
+                text-align: right;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: inline flex;
+                height: 32px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-shrink: 0;
+
+            }
+        }
+    }
 }

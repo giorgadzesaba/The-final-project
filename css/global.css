@@ -241,10 +241,10 @@ header .box nav ul .donate:hover {
 .s1 .line #line1 {
   max-width: 1800px;
   width: 100%;
-  border-bottom: solid 10px white;
+  border-bottom: solid 1px #FFF;
 }
 .s1 .container {
-  background-image: url(../../img/peaceful-green-forest-l.jpg);
+  background-image: url(../../img/tye.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -270,6 +270,7 @@ header .box nav ul .donate:hover {
 }
 
 .container {
+  padding: 0% 10%;
   background: var(--black, #0B0706);
   max-width: 1920px;
   width: 100%;
@@ -285,11 +286,54 @@ header .box nav ul .donate:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.container .logo {
+@media (max-width: 1200px) {
+  .container {
+    padding: 5%;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 2.5%;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.container .div1 img {
   width: 100px;
   height: 60px;
 }
-.container h3 {
+.container .div2 {
+  padding: 0 10%;
+  max-width: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 400px) {
+  .container .div2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+  }
+}
+.container .div2 h3 {
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -297,7 +341,7 @@ header .box nav ul .donate:hover {
   font-weight: 700;
   line-height: 160%; /* 25.6px */
 }
-.container h6 {
+.container .div2 h6 {
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -305,4 +349,73 @@ header .box nav ul .donate:hover {
   font-weight: 400;
   line-height: 160%; /* 22.4px */
   opacity: 0.7799999714;
+}
+.container .div3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container .div3 h2 {
+  max-width: 600px;
+  width: 100%;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 76.8px */
+}
+.container .div3 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .div3 form .in1 {
+  color: rgba(235, 240, 249, 0.3);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: var(--black, #0B0706);
+  height: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  opacity: 0.8000000119;
+}
+.container .div3 form .in2 {
+  color: var(--primary-text, #1D2130);
+  text-align: right;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: inline flex;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }/*# sourceMappingURL=global.css.map */
