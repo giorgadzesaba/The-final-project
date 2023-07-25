@@ -38,7 +38,12 @@
                 width: 90%;
                 
             }
-                
+             @media (max-width:412px) {
+                font-size: 54px;
+             }   
+             @media (max-width:350px) {
+                font-size: 44px; 
+             }
             
         }
     }
