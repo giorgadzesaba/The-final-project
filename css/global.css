@@ -245,7 +245,7 @@ header .box nav ul .donate:hover {
   border-bottom: solid 1px #FFF;
 }
 .s1 .container {
-  background-image: url(../../img/tye.jpg);
+  background-image: url(https://vastphotos.com/files/uploads/photos/10520/peaceful-green-forest-l.jpg?v=20220712073521);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -407,7 +407,7 @@ header .box nav ul .donate:hover {
 }
 .container .div3 form .in1 {
   color: rgba(235, 240, 249, 0.3);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -426,7 +426,7 @@ header .box nav ul .donate:hover {
 .container .div3 form .in2 {
   color: var(--primary-text, #1D2130);
   text-align: right;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
