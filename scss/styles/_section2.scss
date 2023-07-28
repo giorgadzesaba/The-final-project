@@ -42,7 +42,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;            
-            @media (max-width:700px) {
+            @media (max-width:1100px) {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
@@ -72,50 +72,41 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: 120%;
-                    @media (max-width:1350px) {
-                        font-size: 42px;
+                    }     
+            }           
+                h5{
+                    padding-bottom: 3%;
+                    max-width: 496px;
+                    width: 100%;
+                    color: var(--primary-text, #1D2130);
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                    @media (max-width:1100px) {
+                        display: flex;
+                        justify-content: center;
                     }
                 }
-            }
-            h5{
-                padding-bottom: 3%;
-                max-width: 496px;
-                width: 100%;
-                color: var(--primary-text, #1D2130);
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 150%;
-                @media (max-width:1350px) {
-                    font-size: 15px;
-                }
-                @media (max-width:700px) {
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-            h6{
-                max-width: 496px;
-                width: 100%;
-                font-family: 'Roboto', sans-serif;
-                color: var(--primary-text, #1D2130);
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 160%;
-                @media (max-width:1350px) {
-                    font-size: 12px;
-                }
-                @media (max-width:700px) {
-                    display: flex;
-                    justify-content: center;
+                h6{
+                    max-width: 496px;
+                    width: 100%;
+                    font-family: 'Roboto', sans-serif;
+                    color: var(--primary-text, #1D2130);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;
+                    @media (max-width:1100px) {
+                        display: flex;
+                        justify-content: center;
 
+                        }
                 }
-            }
+
         }
     }
-    
     .div2{
         .img1{margin-left: 5%;
             margin-right: 5%;
@@ -131,7 +122,7 @@
         }
     }
     .div3{
-        @media (max-width:700px) {
+        @media (max-width:1100px) {
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -156,9 +147,6 @@
                 line-height: normal;
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                @media (max-width:1350px) {
-                    font-size: 12px;
-                }
             }
             h2{
                 color: var(--primary-text, #1D2130);
@@ -167,9 +155,6 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 150%;
-                @media (max-width:1350px) {
-                    font-size: 21px;
-                }
             }
             h3{
                 color: var(--primary-text, #1D2130);
@@ -178,9 +163,6 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 160%;
-                @media (max-width:1350px) {
-                    font-size: 12px;
-                }
             }
             h1,h2,h3{
                 padding-bottom: 3%;
