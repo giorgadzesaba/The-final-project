@@ -17,8 +17,29 @@
                     <li class="inv"><a href="abuat us.html">About us</a></li>
                     <li class="inv"><a class="curent" href="news.html">news</a></li>
                     <li class="inv"><a href="contact.html">Contact</a></li>
-                    <i class="fa-solid fa-list"></i>
                     <li><a class="donate" href="donate.html">donate</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()"> <i class="fa-solid fa-list"></i></button>
+                      <div class="dropdown-content" id="myDropdown">
+                          <a href="../index.html">home</a>
+                          <a href="abuat us.html">aboat us</a>
+                          <a class="curent" href="news.html">news</a>
+                          <a href="contact.html">contact</a>
+                        </div>
+                      </div> 
+                      <script>
+                          function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                          }
+                          window.onclick = function(e) {
+                              if (!e.target.matches('.dropbtn')) {
+                              var myDropdown = document.getElementById("myDropdown");
+                              if (myDropdown.classList.contains('show')) {
+                                  myDropdown.classList.remove('show');
+                              }
+                              }
+                          }
+                      </script>
                 </ul>
             </nav>
         </div>
@@ -150,27 +171,27 @@
                 <a href="https://www.tbceducation.ge/" target="_blank"><img class="logo1" src="../img/თიბისი.png" alt="tibisis logo"></a>
             </div>
             <div class="div2">
-                    <div>
-                        <h3>Our team</h3>
-                        <h6>About us</h6>
-                        <h6>Team</h6>
-                        <h6>What we do</h6>
-                        <h6>Contact</h6>
-                    </div>
-                    <div>
-                        <h3>More</h3>
-                        <h6>Projects</h6>
-                        <h6>Events</h6>
-                        <h6>Donate</h6>
-                        <h6>Blog</h6>
-                    </div>
-                    <div>
-                        <h3>Connect</h3>
-                        <h6>Facebook</h6>
-                        <h6>Instagram</h6>
-                        <h6>Twitter</h6>
-                        <h6>Linkdin</h6>
-                    </div>
+                <div class="ma1">
+                    <h3>Our team</h3>
+                    <h6>About us</h6>
+                    <h6>Team</h6>
+                    <h6>What we do</h6>
+                    <h6>Contact</h6>
+                </div>
+                <div class="ma1">
+                    <h3>More</h3>
+                    <h6>Projects</h6>
+                    <h6>Events</h6>
+                    <h6>Donate</h6>
+                    <h6>Blog</h6>
+                </div>
+                <div class="ma1">
+                    <h3>Connect</h3>
+                    <h6>Facebook</h6>
+                    <h6>Instagram</h6>
+                    <h6>Twitter</h6>
+                    <h6>Linkdin</h6>
+                </div>
             </div>
             <div class="div3">
                 <h2>Subscribe to get latest updates</h2>

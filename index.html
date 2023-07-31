@@ -17,8 +17,29 @@
                     <li class="inv" ><a href="pages/abuat us.html">About us</a></li>
                     <li class="inv" ><a href="pages/news.html">news</a></li>
                     <li class="inv" ><a href="pages/contact.html">Contact</a></li>
-                    <i class="fa-solid fa-list"></i>
                     <li><a class="donate" href="pages/donate.html">donate</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()"> <i class="fa-solid fa-list"></i></button>
+                      <div class="dropdown-content" id="myDropdown">
+                          <a class="curent" href="index.html">home</a>
+                          <a href="pages/abuat us.html">aboat us</a>
+                          <a href="pages/news.html">news</a>
+                          <a href="pages/contact.html">contact</a>
+                        </div>
+                      </div> 
+                      <script>
+                          function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                          }
+                          window.onclick = function(e) {
+                              if (!e.target.matches('.dropbtn')) {
+                              var myDropdown = document.getElementById("myDropdown");
+                              if (myDropdown.classList.contains('show')) {
+                                  myDropdown.classList.remove('show');
+                              }
+                              }
+                          }
+                      </script>
                 </ul>
             </nav>
         </div>
