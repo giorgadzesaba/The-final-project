@@ -1239,54 +1239,142 @@ header .box nav ul .donate:hover {
       flex-shrink: 0;
 }
 
-.s4 .navbar a {
-  float: left;
+.s4 .div1 {
+  padding: 5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background: var(--off-white, #EBF0F9);
+  max-width: 1920px;
+  width: 100%;
+  min-height: 584px;
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .s4 .div1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s4 .div1 .a2 {
+    margin-top: 96px;
+  }
+}
+.s4 .div1 .a1 {
+  margin-right: 96px;
+}
+.s4 .div1 .a1 .a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.s4 .div1 .a1 .a .line {
+  margin-right: 24px;
+  border-bottom: solid 1px #1D2130;
+  width: 78px;
+}
+.s4 .div1 .a1 .a h4 {
+  color: var(--primary-text, #1D2130);
+  font-family: Roboto;
   font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.s4 .dropdown {
-  float: left;
-  overflow: hidden;
+.s4 .div1 .a1 .b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
-.s4 .dropdown .dropbtn {
-  cursor: pointer;
+.s4 .div1 .a1 .b .line {
+  margin-right: 24px;
+  border-bottom: solid 1px transparent;
+  width: 78px;
+}
+.s4 .div1 .a1 .b h1 {
+  max-width: 490px;
+  width: 100%;
+  color: var(--b, #1D2130);
+  font-family: Roboto;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+@media (max-width: 459px) {
+  .s4 .div1 .a1 .b h1 {
+    font-size: 42px;
+  }
+}
+.s4 .div1 .a1 .c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.s4 .div1 .a1 .c .line {
+  margin-right: 24px;
+  border-bottom: solid 1px transparent;
+  width: 78px;
+}
+.s4 .div1 .a1 .c h6 {
+  max-width: 450px;
+  width: 100%;
+  color: var(--b, #1D2130);
+  font-family: Roboto;
   font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.6999999881;
 }
-.s4 .navbar a:hover, .s4 .dropdown:hover .dropbtn, .s4 .dropbtn:focus {
-  background-color: red;
+.s4 .div1 .a2 .box {
+  padding-bottom: 35px;
 }
-.s4 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.s4 .div1 .a2 .box h5 {
+  color: var(--primary-text, #1D2130);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
 }
-.s4 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.s4 .dropdown-content a:hover {
-  background-color: #ddd;
-}
-.s4 .show {
-  display: block;
+.s4 .div1 .a2 .box h6 {
+  color: var(--secondary-text, #525560);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
 }
 
 @media (min-width: 1921px) {
