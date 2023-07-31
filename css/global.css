@@ -227,6 +227,7 @@ header .box nav ul .dropdown .dropbtn {
   margin: 0;
 }
 header .box nav ul .dropdown-content {
+  right: 0px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
