@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>გარემოს დაცვა</title>
+    <title>environmental protection</title>
     <link rel="stylesheet" href="../css/global.css">
     <script src="https://kit.fontawesome.com/0fec72471d.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +19,7 @@
                     <li class="inv"><a class="curent" href="contact.html">Contact</a></li>
                     <li><a class="donate" href="donate.html">donate</a></li>
                     <div class="dropdown">
-                      <button class="dropbtn" onclick="myFunction()"> <i class="fa-solid fa-list"></i></button>
+                      <button class="dropbtn" onclick="myFunction()"> <i id="pls" class="fa-solid fa-list"></i></button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="../index.html">home</a>
                         <a href="abuat us.html">aboat us</a>
@@ -32,7 +32,7 @@
                             document.getElementById("myDropdown").classList.toggle("show");
                         }
                         window.onclick = function(e) {
-                            if (!e.target.matches('.dropbtn')) {
+                            if (!e.target.matches('.dropbtn'&'.fa-solid')) {
                             var myDropdown = document.getElementById("myDropdown");
                             if (myDropdown.classList.contains('show')) {
                                 myDropdown.classList.remove('show');
@@ -79,6 +79,37 @@
                     <img src="../img/Negative2.svg" alt="LinkedIn">
                 </div>
             </div>
+        </div>
+        <div class="div2">
+            <form action="submit_form.php" method="POST">
+                <div class="box">
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required><br>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required><br>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label for="email">Email ID:</label>
+                        <input type="email" id="email" name="email" required><br>
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required><br>
+                    </div>
+                </div>
+                <div class="box">
+                    <div>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                    </div>
+                </div>
+                <input class="submit" type="submit" value="send message">
+            </form>
         </div>
     </section>
     <footer>

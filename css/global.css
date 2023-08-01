@@ -215,6 +215,7 @@ header .box nav ul {
 header .box nav ul .dropdown {
   float: left;
   overflow: hidden;
+  z-index: 10;
 }
 header .box nav ul .dropdown .dropbtn {
   cursor: pointer;
@@ -227,7 +228,6 @@ header .box nav ul .dropdown .dropbtn {
   margin: 0;
 }
 header .box nav ul .dropdown-content {
-  right: 0px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -235,6 +235,11 @@ header .box nav ul .dropdown-content {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+@media (max-width: 540px) {
+  header .box nav ul .dropdown-content {
+    right: 0;
+  }
 }
 header .box nav ul .dropdown-content .curent {
   color: var(--black, #0B0706);
@@ -1291,7 +1296,7 @@ header .box nav ul .donate:hover {
 }
 .s4 .div1 .a1 .a h4 {
   color: var(--primary-text, #1D2130);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1319,7 +1324,7 @@ header .box nav ul .donate:hover {
   max-width: 490px;
   width: 100%;
   color: var(--b, #1D2130);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -1350,7 +1355,7 @@ header .box nav ul .donate:hover {
   max-width: 450px;
   width: 100%;
   color: var(--b, #1D2130);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1362,7 +1367,7 @@ header .box nav ul .donate:hover {
 }
 .s4 .div1 .a2 .box h5 {
   color: var(--primary-text, #1D2130);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1370,11 +1375,154 @@ header .box nav ul .donate:hover {
 }
 .s4 .div1 .a2 .box h6 {
   color: var(--secondary-text, #525560);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+.s4 .div2 {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 500px;
+  max-width: 1920px;
+  width: 100%;
+}
+@media (max-width: 435px) {
+  .s4 .div2 {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+.s4 .div2 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  max-width: 768px;
+  width: 100%;
+}
+.s4 .div2 form .submit {
+  border: none;
+  color: #FFF;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 16px 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--green-primary, #70C174);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.s4 .div2 form .box {
+  max-width: 768px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s4 .div2 form .box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s4 .div2 form .box div label {
+  opacity: 0.6000000238;
+  color: var(--primary-text, #1D2130);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+.s4 .div2 form .box div input, .s4 .div2 form .box div textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border, #E5E5E5);
+  color: var(--primary-text, #1D2130);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.s4 .div2 form .box div input {
+  width: 368px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+@media (max-width: 367px) {
+  .s4 .div2 form .box div input {
+    width: 250px;
+  }
+}
+.s4 .div2 form .box div textarea {
+  width: 768px;
+}
+@media (max-width: 767px) {
+  .s4 .div2 form .box div textarea {
+    width: 368px;
+  }
+}
+@media (max-width: 367px) {
+  .s4 .div2 form .box div textarea {
+    width: 250px;
+  }
+}
+@media (max-width: 860px) {
+  .s4 .div2 .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s4 .div2 .box textarea {
+    width: 368px;
+  }
 }
 
 @media (min-width: 1921px) {
