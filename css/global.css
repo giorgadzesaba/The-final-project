@@ -281,7 +281,7 @@ header .box nav ul .donate:hover {
 
 .s1 .line {
   max-width: 1920px;
-  width: 85%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@ header .box nav ul .donate:hover {
   line-height: normal;
 }
 .s1 .line #line1 {
-  max-width: 1800px;
+  max-width: 1000px;
   width: 100%;
   border-bottom: solid 1px #FFF;
 }
@@ -612,9 +612,9 @@ header .box nav ul .donate:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 @media (max-width: 1100px) {
   .s2 .div1 .g1 {
@@ -890,7 +890,7 @@ header .box nav ul .donate:hover {
 }
 .s3 .div1 .a1 .b h1 {
   margin-right: 15px;
-  max-width: 550px;
+  max-width: 650px;
   color: var(--primary-text, #1D2130);
   font-family: "Roboto", sans-serif;
   font-size: 56px;
@@ -1317,6 +1317,7 @@ header .box nav ul .donate:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  margin-bottom: 5%;
 }
 .s4 .div1 .a1 .a .line {
   margin-right: 24px;
@@ -1343,6 +1344,7 @@ header .box nav ul .donate:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  margin-bottom: 5%;
 }
 .s4 .div1 .a1 .b .line {
   margin-right: 24px;
@@ -1374,6 +1376,7 @@ header .box nav ul .donate:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  margin-bottom: 5%;
 }
 .s4 .div1 .a1 .c .line {
   margin-right: 24px;

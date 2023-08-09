@@ -1,7 +1,7 @@
 .s1{
      .line {
         max-width: 1920px;
-        width: 85%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,7 +15,7 @@
         font-weight: 500;
         line-height: normal;
     }
-    #line1 {max-width: 1800px;
+    #line1 {max-width: 1000px;
         width: 100%;
         border-bottom: solid 1px #FFF;
     }
