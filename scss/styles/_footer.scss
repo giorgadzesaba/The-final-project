@@ -17,15 +17,17 @@
     @media (max-width:860px) {
         flex-direction: column;
     }
-
-    .logo1{
-        width: 160px;
-        height: 60px;
-    }
-    .div1 img {
-        width: 100px;
-        height: 60px;
+    .div1{
+        @media (max-width:320px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+    img {
+        width: 150px;
+        object-fit: contain;
+        }
+    }
         .div2{
             div{
                 padding: 10%;
@@ -80,9 +82,12 @@
             font-size: 40px;
             font-style: normal;
             font-weight: 700;
-            line-height: 140%; /* 76.8px */
+            line-height: 140%;
             @media (max-width:360px) {
                 font-size: 32px;
+            }
+            @media (max-width:290px) {
+                font-size: 24px;
             }
         }
         form{
