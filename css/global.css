@@ -426,7 +426,7 @@ header .box nav ul .donate:hover {
       -ms-flex-align: start;
           align-items: start;
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .container .div2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
