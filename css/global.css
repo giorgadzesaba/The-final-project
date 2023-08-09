@@ -503,6 +503,9 @@ header .box nav ul .donate:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+.container .div3 form label {
+  display: none;
+}
 .container .div3 form .in1 {
   color: rgba(235, 240, 249, 0.3);
   font-family: "Roboto", sans-serif;
